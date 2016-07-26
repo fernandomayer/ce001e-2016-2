@@ -9,7 +9,7 @@ segundo semestre de 2016, para o curso de Enfermagem (E).
 
 Este repositório contém todo o material de aula e os arquivos
 necessários para gerar a página da disciplina, disponível em:
-https://fernandomayer.github.io/ce001e-2016-02
+https://fernandomayer.github.io/ce001e-2016-2
 
 ### Para gerar o site
 
