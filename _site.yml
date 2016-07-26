@@ -28,13 +28,7 @@ navbar:
       href: recursos.html
     - text: "Materiais"
       menu:
-      - text: "Tópico 1"
-      - text: "Página A"
-        href: pagA.html
-      - text: "----------"
-      - text: "Tópico 2"
-      - text: "Página B"
-        href: pagB.html
+      - text: "Introdução"
   right:
     - text: GitHub
       icon: fa-github fa-lg
