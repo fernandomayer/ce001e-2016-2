@@ -1,5 +1,5 @@
 ---
-title: "CE000 - Nome da Disciplina"
+title: "CE001 - Bioestatística"
 output:
   html_document:
     toc: false
@@ -9,20 +9,20 @@ output:
 source("setup_knitr.R")
 ```
 
-[![Build Status](https://travis-ci.org/fernandomayer/disciplinas-template.svg)](https://travis-ci.org/fernandomayer/disciplinas-template)
+[![Build Status](https://travis-ci.org/fernandomayer/ce001e-2016-02.svg)](https://travis-ci.org/fernandomayer/ce001e-2016-02)
 
 <!-- <div class="alert alert-danger" role="alert"> **ATENÇÃO!** Aqui é um -->
 <!-- espaço para avisos. Comente quando não utilizar. </div> -->
 
 # Detalhes da oferta da disciplina
 
-- **Curso:** Disciplina (T)
+- **Curso:** Enfermagem (E)
 - **Período:** segundo semestre de 2016
 - **Professor Responsável:** [Fernando de Pol Mayer][], ([LEG][]:
   Laboratório de Estatística e Geoinformação)
 - **Horários e Locais:**
-    - Segunda, 13:30 - 15:10h, **EQ13**
-    - Quarta, 13:30 - 15:10h, **EQ13**
+    - Segunda, 13:30 - 15:10h, **A confirmar**
+    - Quarta, 13:30 - 15:10h, **A confirmar**
 - **Horários de atendimento do professor:**
     - Terças e quintas, 14:00-18:00 (preferenciais). Outros horários
       podem ser agendados previamente por email.

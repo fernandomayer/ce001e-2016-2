@@ -1,4 +1,4 @@
-name: "disciplinas-template"
+name: "ce001e-2016-02"
 output_dir: "."
 exclude: ["README.md"]
 output:
@@ -16,7 +16,7 @@ output:
       in_header: analytics.html
       after_body: footer.html
 navbar:
-  title: "CE000"
+  title: "CE001"
   left:
     - text: "Home"
       href: index.html
