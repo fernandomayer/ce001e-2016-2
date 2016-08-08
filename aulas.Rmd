@@ -12,9 +12,12 @@ source("setup_knitr.R")
 Abaixo o histórico de atividades realizadas em classe e atividades extra
 classe aplicadas.
 
-- **01/08**: Apresentação da disciplina.
-- **03/08**: Não haverá aula devido ao
+- **01/08**: Não houve aula devido ao
   [Software Carpentry - UFPR](http://abelsiqueira.github.io/2016-08-01-ufpr)
+- **03/08**: Não houve aula devido ao
+  [Software Carpentry - UFPR](http://abelsiqueira.github.io/2016-08-01-ufpr)
+- **08/08**: Apresentação da disciplina. Ver os
+  [slides](01_introducao_e_amostragem/01_Introducao_a_Estatistica_e_amostragem.pdf).
 
 ## Exercícios
 

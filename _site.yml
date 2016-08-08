@@ -29,6 +29,8 @@ navbar:
     - text: "Materiais"
       menu:
       - text: "Introdução"
+      - text: "Introdução à Estatística e amostragem"
+        href: 01_introducao_e_amostragem/01_Introducao_a_Estatistica_e_amostragem.pdf
   right:
     - text: GitHub
       icon: fa-github fa-lg
