@@ -18,11 +18,18 @@ classe aplicadas.
   [Software Carpentry - UFPR](http://abelsiqueira.github.io/2016-08-01-ufpr)
 - **08/08**: Apresentação da disciplina. Ver os
   [slides](01_introducao_e_amostragem/01_Introducao_a_Estatistica_e_amostragem.pdf).
+- **10/08**: Introdução a Estatística e tipos de amostragem.
+  [Slides](01_introducao_e_amostragem/01_Introducao_a_Estatistica_e_amostragem.pdf).
+- **15/08**: Não haverá aula
+- **17/08**: Não haverá aula
 
 ## Exercícios
 
-- Em breve
+- [Lista 1][]: Amostragem e análise exploratória de dados.
 
 ## Notas
 
 As notas estão disponíveis [nesta página](notas.html).
+
+
+[Lista 1]: exercicios/01_Amostragem_e_Exploratoria.pdf
