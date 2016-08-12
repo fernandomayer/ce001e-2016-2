@@ -22,6 +22,8 @@ classe aplicadas.
   [Slides](01_introducao_e_amostragem/01_Introducao_a_Estatistica_e_amostragem.pdf).
 - **15/08**: Não haverá aula
 - **17/08**: Não haverá aula
+- **22/08**: Tipos de amostragem probabilística e exercícios.
+  [Slides](01_introducao_e_amostragem/01_Introducao_a_Estatistica_e_amostragem.pdf).
 
 ## Exercícios
 
