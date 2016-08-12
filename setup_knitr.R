@@ -5,10 +5,10 @@ opts_chunk$set(
     tidy = FALSE,
     comment = NA,
     ## collapse = TRUE, ## colapsa chunks em R Markdown
-    ## fig.width = 10,
-    ## fig.height = 8,
+    fig.width = 8,
+    fig.height = 7,
     fig.align = "center",
-    ## dpi = 80, ## aumentar o dpi para exibir maior.
+    dpi = 80, ## aumentar o dpi para exibir maior.
     ## dev = "png",
     fig.path = "figures/",
     cache.path = "cache/"
