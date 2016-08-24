@@ -24,6 +24,9 @@ classe aplicadas.
 - **17/08**: Não haverá aula
 - **22/08**: Tipos de amostragem probabilística e exercícios.
   [Slides](01_introducao_e_amostragem/01_Introducao_a_Estatistica_e_amostragem.pdf).
+- **24/08**: Análise exploratória de dados: classificação de variáveis.
+  Tabelas e gráficos para variáveis qualitativas.
+  [Material](02_Analise_Exploratoria_de_Dados.html).
 
 ## Exercícios
 
