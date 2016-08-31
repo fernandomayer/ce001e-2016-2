@@ -27,10 +27,14 @@ classe aplicadas.
 - **24/08**: Análise exploratória de dados: classificação de variáveis.
   Tabelas e gráficos para variáveis qualitativas.
   [Material](02_Analise_Exploratoria_de_Dados.html).
+- **29/08**: Tabelas e gráficos para variáveis quantitativas discretas.
+  [Material](02_Analise_Exploratoria_de_Dados.html).
+- **31/08**: Tabelas e gráficos para variáveis quantitativas contínuas.
+  [Material](02_Analise_Exploratoria_de_Dados.html).
 
 ## Exercícios
 
-- [Lista 1][]: Amostragem e análise exploratória de dados.
+- [Lista 1][]: Amostragem e análise exploratória de dados. [Gabarito 1][].
 
 ## Notas
 
@@ -38,3 +42,4 @@ As notas estão disponíveis [nesta página](notas.html).
 
 
 [Lista 1]: exercicios/01_Amostragem_e_Exploratoria.pdf
+[Gabarito 1]: exercicios/01_Amostragem_e_Exploratoria_GABARITO.pdf
