@@ -31,6 +31,7 @@ classe aplicadas.
   [Material](02_Analise_Exploratoria_de_Dados.html).
 - **31/08**: Tabelas e gráficos para variáveis quantitativas contínuas.
   [Material](02_Analise_Exploratoria_de_Dados.html).
+- **05/09**: Medidas de tendência central: moda, mediana e média.
 
 ## Exercícios
 
