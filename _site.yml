@@ -32,8 +32,10 @@ navbar:
       - text: "Introdução à Estatística e amostragem [PDF]"
         href: 01_introducao_e_amostragem/01_Introducao_a_Estatistica_e_amostragem.pdf
       - text: "Estatística descritiva"
-      - text: "Análise exploratória de dados"
+      - text: "Análise exploratória de dados [HTML]"
         href: 02_Analise_Exploratoria_de_Dados.html
+      - text: "Medidas resumo [PDF]"
+        href: 03_Medidas_resumo/03_Medidas_resumo.pdf
       - text: "----------"
       - text: "Exercícios"
       - text: "Amostragem e análise exploratória de dados [PDF]"
