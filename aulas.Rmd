@@ -32,12 +32,18 @@ classe aplicadas.
 - **31/08**: Tabelas e gráficos para variáveis quantitativas contínuas.
   [Material](02_Analise_Exploratoria_de_Dados.html).
 - **05/09**: Medidas de tendência central: moda, mediana e
-  média. [Slides](03_Medidas_resumo/03_Medidas_resumo.pdf)
+  média. [Slides](03_Medidas_resumo/03_Medidas_resumo.pdf).
+- **14/09**: Medidas de variação: amplitude, desvio-médio, variância,
+  desvio-padrão e coeficiente de variação. Medidas de posição relativa:
+  percentis, quartis, resumo dos cinco
+  números. [Slides](03_Medidas_resumo/03_Medidas_resumo.pdf).
+- **21/09**: Gráficos de caixa (*boxplots*) e dúvidas de exercícios.
+  **Primeira prova**.
 
 ## Exercícios
 
 - [Lista 1][]: Amostragem e análise exploratória de dados. [Gabarito 1][].
-- [Lista 2][]: Medidas resumo.
+- [Lista 2][]: Medidas resumo. [Gabarito 2][].
 
 ## Notas
 
