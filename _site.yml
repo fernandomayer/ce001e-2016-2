@@ -40,6 +40,8 @@ navbar:
       - text: "Exercícios"
       - text: "Amostragem e análise exploratória de dados [PDF]"
         href: exercicios/01_Amostragem_e_Exploratoria.pdf
+      - text: "Medidas resumo [PDF]"
+        href: exercicios/03_Medidas_resumo.pdf
   right:
     - text: GitHub
       icon: fa-github fa-lg
