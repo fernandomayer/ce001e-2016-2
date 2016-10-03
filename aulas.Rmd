@@ -39,6 +39,10 @@ classe aplicadas.
   números. [Slides](03_Medidas_resumo/03_Medidas_resumo.pdf).
 - **21/09**: Gráficos de caixa (*boxplots*) e dúvidas de exercícios.
   **Primeira prova**.
+- **28/09**: Probabilidade. Conceitos iniciais. Conjuntos e operações
+  entre conjuntos.
+- **05/10**: Não haverá aula devido
+  ao [EVINCI](http://www.prppg.ufpr.br/evinci_einti)
 
 ## Exercícios
 
