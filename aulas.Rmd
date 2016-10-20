@@ -12,6 +12,15 @@ source("setup_knitr.R")
 Abaixo o histórico de atividades realizadas em classe e atividades extra
 classe aplicadas.
 
+```{r, eval=FALSE, include=FALSE}
+## Gera a lista com as datas de todas as aulas. O resultado do último
+## comando pode ser copiado direto para o documento
+datas <- seq.Date(as.Date("2016-10-12"), as.Date("2016-12-07"),
+                  by = "week")
+datas <- format.Date(datas, format = "%d/%m")
+cat(paste0("- **", datas, "**:\n"))
+```
+
 - **01/08**: Não houve aula devido ao
   [Software Carpentry - UFPR](http://abelsiqueira.github.io/2016-08-01-ufpr)
 - **03/08**: Não houve aula devido ao
@@ -40,14 +49,26 @@ classe aplicadas.
 - **21/09**: Gráficos de caixa (*boxplots*) e dúvidas de exercícios.
   **Primeira prova**.
 - **28/09**: Probabilidade. Conceitos iniciais. Conjuntos e operações
-  entre conjuntos.
+  entre conjuntos. [Slides](04_Probabilidade/04_Probabilidade.pdf).
 - **05/10**: Não haverá aula devido
   ao [EVINCI](http://www.prppg.ufpr.br/evinci_einti)
+- **12/10**: Feriado.
+- **19/10**: Probabilidade: definições clássica e frequentista. Regra da
+  adição. Probabilidade
+  condicional. [Slides](04_Probabilidade/04_Probabilidade.pdf).
+- **26/10**:
+- **02/11**: Feriado.
+- **09/11**:
+- **16/11**:
+- **23/11**:
+- **30/11**:
+- **07/12**:
 
 ## Exercícios
 
 - [Lista 1][]: Amostragem e análise exploratória de dados. [Gabarito 1][].
 - [Lista 2][]: Medidas resumo. [Gabarito 2][].
+- [Lista 3][]: Probabilidade. [Gabarito 3][].
 
 ## Notas
 
@@ -58,3 +79,5 @@ As notas estão disponíveis [nesta página](notas.html).
 [Gabarito 1]: exercicios/01_Amostragem_e_Exploratoria_GABARITO.pdf
 [Lista 2]: exercicios/03_Medidas_resumo.pdf
 [Gabarito 2]: exercicios/03_Medidas_resumo_GABARITO.pdf
+[Lista 3]: exercicios/04_Probabilidade.pdf
+[Gabarito 3]: exercicios/04_Probabilidade_GABARITO.pdf

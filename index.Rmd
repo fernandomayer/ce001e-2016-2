@@ -11,12 +11,12 @@ source("setup_knitr.R")
 
 [![Build Status](https://travis-ci.org/fernandomayer/ce001e-2016-2.svg)](https://travis-ci.org/fernandomayer/ce001e-2016-2)
 
-<div class="alert alert-danger" role="alert">
-**ATENÇÃO!**
+<!-- <div class="alert alert-danger" role="alert"> -->
+<!-- **ATENÇÃO!** -->
 
-- Não haverá aula no dia 05/10 devido ao [EVINCI](http://www.prppg.ufpr.br/evinci_einti)
+<!-- - Não haverá aula no dia 05/10 devido ao [EVINCI](http://www.prppg.ufpr.br/evinci_einti) -->
 
-</div>
+<!-- </div> -->
 
 # Detalhes da oferta da disciplina
 
