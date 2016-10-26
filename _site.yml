@@ -39,6 +39,8 @@ navbar:
       - text: "Probabilidade e variáveis aleatórias"
       - text: "Probabilidade [PDF]"
         href: 04_Probabilidade/04_Probabilidade.pdf
+      - text: "Variáveis aleatórias [PDF]"
+        href: 05_Variaveis_aleatorias/05_Variaveis_Aleatorias.pdf
       - text: "----------"
       - text: "Exercícios"
       - text: "Amostragem e análise exploratória de dados [PDF]"
