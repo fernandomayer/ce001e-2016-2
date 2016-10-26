@@ -56,13 +56,20 @@ cat(paste0("- **", datas, "**:\n"))
 - **19/10**: Probabilidade: definições clássica e frequentista. Regra da
   adição. Probabilidade
   condicional. [Slides](04_Probabilidade/04_Probabilidade.pdf).
-- **26/10**:
+- **26/10**: Probabilidade: regra da multiplicação e independência de
+  eventos. [Slides](04_Probabilidade/04_Probabilidade.pdf). Variáveis
+  aleatórias: conceitos iniciais. Esperança e variância. Modelo de
+  Bernoulli. [Slides](05_Variaveis_aleatorias/05_Variaveis_Aleatorias.pdf).
+- **31/10** (**Aula extra**): Variáveis aleatórias discretas: modelos
+  binomial e de Poisson. Variáveis aleatórias contínuas: esperança e
+  variância. Modelo normal.
+  [Slides](05_Variaveis_aleatorias/05_Variaveis_Aleatorias.pdf).
 - **02/11**: Feriado.
-- **09/11**:
+- **09/11**: **Segunda prova**
 - **16/11**:
 - **23/11**:
 - **30/11**:
-- **07/12**:
+- **07/12**: **Terceira prova**
 
 ## Exercícios
 
