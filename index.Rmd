@@ -14,7 +14,9 @@ source("setup_knitr.R")
 <div class="alert alert-danger" role="alert">
 **ATENÇÃO!**
 
-- Haverá uma **aula extra** no dia 31/10 (segunda-feira) às 14:00.
+- ~~Haverá uma **aula extra** no dia 31/10 (segunda-feira) às 14:00.~~
+- A aula extra do dia 31/10 não poderá ser realizada, e remarcaremos
+  para outra data.
 
 </div>
 

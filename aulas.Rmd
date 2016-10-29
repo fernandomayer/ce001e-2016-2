@@ -60,12 +60,12 @@ cat(paste0("- **", datas, "**:\n"))
   eventos. [Slides](04_Probabilidade/04_Probabilidade.pdf). Variáveis
   aleatórias: conceitos iniciais. Esperança e variância. Modelo de
   Bernoulli. [Slides](05_Variaveis_aleatorias/05_Variaveis_Aleatorias.pdf).
-- **31/10** (**Aula extra**): Variáveis aleatórias discretas: modelos
+- **31/10** (**Aula extra**): DESMARCADA
+- **02/11**: Feriado.
+- **09/11**: Variáveis aleatórias discretas: modelos
   binomial e de Poisson. Variáveis aleatórias contínuas: esperança e
   variância. Modelo normal.
   [Slides](05_Variaveis_aleatorias/05_Variaveis_Aleatorias.pdf).
-- **02/11**: Feriado.
-- **09/11**: **Segunda prova**
 - **16/11**:
 - **23/11**:
 - **30/11**:
