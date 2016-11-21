@@ -41,6 +41,11 @@ navbar:
         href: 04_Probabilidade/04_Probabilidade.pdf
       - text: "Variáveis aleatórias [PDF]"
         href: 05_Variaveis_aleatorias/05_Variaveis_Aleatorias.pdf
+      - text: "Inferência estatística"
+      - text: "Distribuições amostrais [PDF]"
+        href: 06_Distribuicoes_amostrais/06_Distribuicoes_amostrais.pdf
+      - text: "Estimação intervalar [PDF]"
+        href: 07_Estimacao_intervalar/07_Estimacao_intervalar.pdf
       - text: "----------"
       - text: "Exercícios"
       - text: "Amostragem e análise exploratória de dados [PDF]"
