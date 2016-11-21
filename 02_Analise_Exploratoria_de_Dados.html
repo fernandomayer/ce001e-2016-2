@@ -407,7 +407,7 @@ div.tocify {
 <li><strong>Ordinais</strong>: quando as categorias podem ser ordenadas. Ex.: tamanho (pequeno, médio, grande), classe social (baixa, média, alta), grau de instrução (básico, médio, graduação, pós-graduação)</li>
 </ul>
 <div class="figure">
-<img src="img/classificacao_variaveis.png" alt="" />
+<img src="img/classificacao_variaveis.png" />
 
 </div>
 </div>
@@ -832,42 +832,42 @@ Um arquivo <code>csv</code> é um arquivo de texto (assim como um <code>txt</cod
 <table>
 <thead>
 <tr class="header">
-<th align="left">Variável</th>
-<th align="left">Classificação</th>
+<th>Variável</th>
+<th>Classificação</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>Funcionario</code></td>
-<td align="left">Quantitativa discreta</td>
+<td><code>Funcionario</code></td>
+<td>Quantitativa discreta</td>
 </tr>
 <tr class="even">
-<td align="left"><code>Est.civil</code></td>
-<td align="left">Qualitativa nominal</td>
+<td><code>Est.civil</code></td>
+<td>Qualitativa nominal</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>Inst</code></td>
-<td align="left">Qualitativa ordinal</td>
+<td><code>Inst</code></td>
+<td>Qualitativa ordinal</td>
 </tr>
 <tr class="even">
-<td align="left"><code>Filhos</code></td>
-<td align="left">Quantitativa discreta</td>
+<td><code>Filhos</code></td>
+<td>Quantitativa discreta</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>Salario</code></td>
-<td align="left">Quantitativa contínua</td>
+<td><code>Salario</code></td>
+<td>Quantitativa contínua</td>
 </tr>
 <tr class="even">
-<td align="left"><code>Anos</code></td>
-<td align="left">Quantitativa discreta</td>
+<td><code>Anos</code></td>
+<td>Quantitativa discreta</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>Meses</code></td>
-<td align="left">Quantitativa discreta</td>
+<td><code>Meses</code></td>
+<td>Quantitativa discreta</td>
 </tr>
 <tr class="even">
-<td align="left"><code>Regiao</code></td>
-<td align="left">Qualitativa nominal</td>
+<td><code>Regiao</code></td>
+<td>Qualitativa nominal</td>
 </tr>
 </tbody>
 </table>
@@ -928,15 +928,15 @@ solteiro 16
 Sum      36</code></pre>
 <p>Com essa informação adicional, podemos agora calcular a <strong>frequência relativa</strong>, ou seja, a frequência absoluta de cada categoria, dividida pelo total.</p>
 <pre class="r"><code>cbind(&quot;fr&quot; = prop.table(civil.tb))</code></pre>
-<pre><code>                fr
-casado   0.5555556
-solteiro 0.4444444</code></pre>
+<pre><code>              fr
+casado   0.55556
+solteiro 0.44444</code></pre>
 <p>Note que, nesse caso, a soma das categorias deve somar 1 (ou 100%)</p>
 <pre class="r"><code>cbind(&quot;fr&quot; = addmargins(prop.table(civil.tb)))</code></pre>
-<pre><code>                fr
-casado   0.5555556
-solteiro 0.4444444
-Sum      1.0000000</code></pre>
+<pre><code>              fr
+casado   0.55556
+solteiro 0.44444
+Sum      1.00000</code></pre>
 <p>Com isso, podemos definir alguns tipos de frequência.</p>
 <div class="panel panel-primary">
 <div class="panel-heading">
@@ -1117,7 +1117,7 @@ AT = 23.3 - 4 =
 <p><span class="math display">\[
 h = \frac{AT}{k} = \frac{19.3}
     {6} =
-    3.2166667
+    3.21667
 \]</span></p>
 <p>O valor de amplitude de classe pode ser arredondado para um número inteiro, geralmente para facilitar a interpretação da tabela. Nesse caso, poderíamos arredondar a amplitude para 3 ou para 4 (inteiros mais próximos). Como o valor mínimo é 4 e o máximo está próximo de 24, é natural arredondarmos a amplitude para 4. Após esse arredondamento, vamos denominar a amplitude de classe definitiva por <span class="math inline">\(\Delta\)</span>, apenas para diferenciar do valor calculado em <span class="math inline">\(h\)</span>.</p>
 <p>Dessa forma, as classes seriam formadas pela sequência, ou “quebra de classes” definida por</p>
