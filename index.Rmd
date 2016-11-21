@@ -14,8 +14,7 @@ source("setup_knitr.R")
 <div class="alert alert-danger" role="alert">
 **ATENÇÃO!**
 
-- Devido à ocupação do prédio do Setor de Exatas, a aula desta
-  quarta-feira (16/11) será no Laboratório de Estatística (LABEST).
+- Haverá aula extra dia 21/11 (segunda-feira) às 13:30 no LABEST.
 - O LABEST fica no prédio em frente ao prédio de Exatas (prédio baixo
   marrom), com a entrada virada para o lado oposto (toldo azul).
 
