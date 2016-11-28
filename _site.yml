@@ -46,6 +46,8 @@ navbar:
         href: 06_Distribuicoes_amostrais/06_Distribuicoes_amostrais.pdf
       - text: "Estimação intervalar [PDF]"
         href: 07_Estimacao_intervalar/07_Estimacao_intervalar.pdf
+      - text: "Testes de hipótese [PDF]"
+        href: 08_Teste_de_hipotese/08_Teste_de_hipotese.pdf
       - text: "----------"
       - text: "Exercícios"
       - text: "Amostragem e análise exploratória de dados [PDF]"

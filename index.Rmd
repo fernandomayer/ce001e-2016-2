@@ -14,11 +14,11 @@ source("setup_knitr.R")
 <div class="alert alert-danger" role="alert">
 **ATENÇÃO!**
 
-- A segunda prova está disponível neste [link](exercicios/P2_ce001.pdf),
-  e deve ser entregue até o dia 28/11 (segunda-feira).
+<!-- - A segunda prova está disponível neste [link](exercicios/P2_ce001.pdf), -->
+<!--   e deve ser entregue até o dia 28/11 (segunda-feira). -->
 - Haverá aula também às segundas-feiras nos dias: 28/11 e 05/12.
-- Enquanto durar a ocupação no prédio de Exatas, as aulas serão no
-  LABEST.
+<!-- - Enquanto durar a ocupação no prédio de Exatas, as aulas serão no -->
+<!--   LABEST. -->
 
 </div>
 
