@@ -1,0 +1,538 @@
+\documentclass[a4paper,11pt,fleqn]{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0, 0, 0}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.4,0.4,0.4}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{\textbf{#1}}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0,0,0}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0,0,0}{\textbf{#1}}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0,0,0}{\textbf{#1}}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0,0,0}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+%%----------------------------------------------------------------------
+%% opções comuns
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+%\usepackage[margin=2cm]{geometry}
+\usepackage{indentfirst}
+\usepackage{fancybox}
+%\usepackage[usenames,dvipsnames]{color}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{lscape}
+\usepackage{natbib}
+\setlength{\bibsep}{0.0pt}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[final]{pdfpages}
+\usepackage{setspace}
+\usepackage{paralist} % enumitem, compactitem
+  % \plitemsep=2pt
+%%----------------------------------------------------------------------
+
+%%----------------------------------------------------------------------
+%% FLOATS: graficos e tabelas
+\usepackage{graphicx}
+\usepackage{float} % fornece a opção [H] para floats
+\usepackage{longtable}
+\usepackage{supertabular}
+%% captions e headings em sans-serif
+\usepackage[font={sf},labelfont={sf,bf}]{caption}
+\usepackage{subcaption}
+\renewcommand{\thesubfigure}{\Alph{subfigure}}
+\usepackage{titlesec}
+\titleformat*{\section}{\normalsize\bfseries\sffamily}
+\titleformat*{\subsection}{\normalsize\bfseries\sffamily}
+\titleformat*{\subsubsection}{\normalsize\bfseries\sffamily}
+\titleformat*{\paragraph}{\normalsize\bfseries\sffamily}
+\titleformat*{\subparagraph}{\normalsize\bfseries\sffamily}
+\theoremstyle{definition}
+\newtheorem*{mydef}{Definição}
+%%----------------------------------------------------------------------
+
+%%----------------------------------------------------------------------
+%% definiçoes de hyperref e xcolor
+\usepackage{hyperref}
+\usepackage{xcolor}
+%%----------------------------------------------------------------------
+
+%%----------------------------------------------------------------------
+%% FONTES
+
+%% micro-tipografia
+\usepackage[protrusion=true,expansion=true]{microtype}
+%% Bitstream Charter with mathdesign
+\usepackage{lmodern} % sans-serif: Latin Modern
+\usepackage[charter]{mathdesign} % serif: Bitstream Charter
+\usepackage[scaled]{beramono} % truetype: Bistream Vera Sans Mono
+\usepackage[scaled]{helvet}
+%\usepackage{inconsolata}
+
+
+%\usepackage[sf]{titlesec}
+%%----------------------------------------------------------------------
+
+%%----------------------------------------------------------------------
+%% hifenização
+\usepackage[htt]{hyphenat} % permite hifenizar texttt. Ao inves disso
+% pode usar \allowbreak no ponto qu quiser quebrar dentro do texttt
+\hyphenation{con-si-de-ra-ção pes-que-i-ros pes-que-i-ra se-gui-do-ras
+  di-fe-ren-tes pla-ni-lha pla-ni-lhão re-fe-ren-te con-ta-gem
+  em-bar-ques qua-li-da-de a-le-a-to-ri-za-dos}
+%%----------------------------------------------------------------------
+
+%%----------------------------------------------------------------------
+%% comandos customizados
+\usepackage{xspace} % lida com os espaços depois dos comandos
+\providecommand{\eg}{\textit{e.g.}\xspace}
+\providecommand{\ie}{\textit{i.e.}\xspace}
+\providecommand{\R}{\textsf{R}\xspace}
+\newcommand{\mb}[1]{\mathbf{#1}}
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\providecommand{\E}{\text{E}}
+\providecommand{\Var}{\text{Var}}
+\providecommand{\logit}{\text{logit}}
+%% Para alterar o titulo do thebibliography
+\addto\captionsbrazilian{%
+  \renewcommand{\refname}{Bibliografia}
+}
+%%----------------------------------------------------------------------
+
+%%----------------------------------------------------------------------
+%% Comandos para deixar o texto mais compacto
+\usepackage{marginnote}
+\usepackage[top=1cm, bottom=1cm, inner=1cm, outer=1cm,nohead, nofoot, heightrounded, marginparsep=.05cm]{geometry}
+\setlength{\parindent}{0pt}
+%%----------------------------------------------------------------------
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+\reversemarginpar % para colocar a marginnote a esquerda
+
+
+
+
+
+\hrule
+\vspace{0.3cm}
+
+\begin{minipage}[c]{.85\textwidth}
+  Bioestatística --- CE001 \\
+  Prof. Fernando de Pol Mayer --- Departamento de Estatística --- DEST \\
+  Exercícios: inferência \\
+  Nome:   \hfill GRR: \hspace{2cm}
+\end{minipage}\hfill
+\begin{minipage}[c]{.15\textwidth}
+\flushright
+\includegraphics[width=2.2cm]{../img/ufpr-logo.png}
+\end{minipage}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\textbf{Observação}: em \underline{todos} os problemas que envolvem
+teste de hipótese, é necessário deixar claro e responder nesta ordem:
+\begin{compactenum}[(a)]
+\item As hipóteses nula ($H_0$) e alternativa ($H_a$)
+%\item O nível de significância $\alpha$
+\item O valor crítico
+\item A estatística de teste
+\item A decisão do teste (rejeita ou não rejeita $H_0$)
+\item Uma frase escrevendo a conclusão com base na decisão
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+%%----------------------------------------------------------------------
+
+\begin{compactenum}[1.]
+\item Os diâmetros de uma população de rolamentos fabricados por uma
+  empresa tem distribuição normal com média de 1 mm e desvio padrão de
+  0,2 mm. Qual é a probabilidade de:
+  \begin{compactenum}
+  \item Amostrarmos 100 rolamentos e obtermos um diâmetro médio maior
+    que 1,13 mm?
+  \item Amostrarmos 5 rolamentos e obtermos um diâmetro médio menor que 0,93
+    mm?
+  \item Amostrarmos 35 rolamentos e obtermos um diâmetro médio superior
+    a 1,15 mm ou inferior a 0,97 mm?
+  \item Refaça o item (b), mas agora com uma amostra de 50
+    rolamentos. Compare as respostas e explique a diferença.
+  \end{compactenum}
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[2.]
+\item A quantidade de horas diárias que um adulto passa em frente ao
+  computador possui uma distribuição com assimetria positiva, com média
+  de 3,6 horas e desvio padrão de 0,5 horas. Qual é a probabilidade de:
+  \begin{compactenum}
+  \item Avaliarmos 87 pessoas e obtermos uma média superior a 3,7
+    horas?
+  \item Avaliarmos 6 pessoas e obtermos uma média inferior a 2,9 horas?
+  \item Avaliarmos 37 pessoas e obtermos uma média superior a 3,67
+    horas ou inferior a 3,47 horas?
+  \item O que pode-se dizer com relação ao resultado obtido no item (b)?
+  \end{compactenum}
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[3.]
+\item Se queremos construir intervalos de confiança para as estimativas
+  de médias populacionais, quais seriam os valores de $\alpha$ e
+  críticos de $z_{\alpha/2}$ se estamos interessados nos níveis de
+  confiança de:
+  \begin{itemize}
+  \item[] (a) 90\% \qquad (b) 94\% \qquad (c) 95\% \qquad (d) 98\%
+    \qquad (e) 99\%
+  \end{itemize}
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[4.]
+\item Retiramos uma amostra aleatória de 55 preços de um determinado
+  produto. A média amostral foi de R\$ 18,30, e assume-se que o desvio
+  padrão populacional é conhecido, com valor de R\$ 4,10. Com isso:
+  \begin{compactenum}
+  \item Verifique se as suposições necessárias para o cálculo de
+    intervalos de confiança estão satisfeitas.
+  \item Calcule as margens de erro para os níveis de confiança
+    \begin{itemize}
+    \item[] (i) $\gamma = 0,90$ \quad (ii) $\gamma = 0,95$ \quad
+      (iii) $\gamma = 0,99$
+    \end{itemize}
+  \item Construa os intervalos de confiança para os três casos do item
+    anterior.
+  \item Explique o que significa cada intervalo de confiança obtido.
+  \end{compactenum}
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[5.] % Magalhaes, pg 234
+
+\item Por analogia a produtos similares, o tempo de reação de um novo
+  medicamento pode ser considerado como tendo distribuição Normal com
+  desvio-padrão igual a 2 minutos (a média é desconhecida). Vinte
+  pacientes foram sorteados, receberam o medicamento e tiveram seu tempo
+  de reação anotado. A média do tempo de reação dos 20 pacientes
+  amostrados foi de 4,75 minutos.
+  \begin{compactenum}
+  \item Construa um intervalo de confiança de 90\% para estimar a
+    verdadeira média para o tempo de reação.
+  \item Construa um intervalo de confiança de 99\% para estimar a
+    verdadeira média para o tempo de reação.
+  \item Compare e interprete os resultados. O que você pode afirmar
+    quanto à influência do aumento do nível de confiança na amplitude
+    dos intervalos?
+  \end{compactenum}
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[6.] % Magalhaes, pg 234
+\item Seja $X \sim \text{N}(\mu, 16)$
+  \begin{compactenum}
+  \item Uma amostra de tamanho 25 foi coletada e forneceu uma média
+    amostral de 8. Construa intervalos de confiança de 90\% e 95\%.
+  \item Para um nível de confiança de 95\%, construa intervalos de
+    confiança supondo tamanhos de amostra de 15 e 65 (admita a mesma
+    média amostral de 8). Comente sobre o porque os intervalos de
+    confiança são diferentes.
+  \item Calcule o tamanho da amostra, para que com 90\% de
+    probabilidade, a média amostral não se afaste da média populacional
+    por mais de (i) 0,2 unidades, (ii) 2 unidades. Comente sobre o
+    porque os tamanhos amostrais são diferentes.
+  \end{compactenum}
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\clearpage
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[7.] % Magalhaes, pg 238
+\item Desejamos coletar uma amostra de uma variável aleatória $X$, com
+  distribuição Normal, de média desconhecida e variância 30. Qual deve
+  ser o tamanho da amostra para que, com 95\% de probabilidade, a média
+  amostral não difira da média populacional por mais de 3 unidades?
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[8.]
+\item Considere que a altura de árvores em uma floresta é o
+  objeto de interesse. Temos interesse em fazer inferências sobre a
+  verdadeira altura média populacional das árvores. Alguns monitoramentos
+  são feitos para a coleta de dados sobre as alturas das árvores. Após uma
+  análise descritiva verificamos que a distribuição das alturas das
+  árvores segue uma distribuição normal. Se temos interesse em estimar
+  intervalos de confiança para a média verdadeira das alturas:
+  \begin{compactenum}
+  \item Qual seria a distribuição de probabilidade apropriada para a
+    análise da distribuição das médias amostrais?
+  \item Quais as suposições necessárias para construirmos intervalos de
+    confiança quando o $\sigma$ é desconhecido?
+  \item Quais seriam os valores de $\alpha$ e críticos se estivéssemos
+    interessados em construir intervalos de confiança de 99\%, 95\% e 90\%
+    para a média verdadeira com uma amostra de 38 alturas de árvores.
+  \item Quais seriam os valores críticos apropriados se estivéssemos
+    interessados em construir intervalos de confiança de 99\%, 95\% e 90\%
+    para a média verdadeira com uma amostra de 13 alturas de árvores.
+  \end{compactenum}
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[9.]
+\item No caso do problema anterior, estime as margens de erro
+  das médias amostrais em relação à verdadeira média se:
+  \begin{compactenum}
+  \item O tamanho amostral é 14 e queremos margens de erro associadas a
+    95\% de confiança. Na amostra encontramos uma média de 1,3 m e um
+    desvio padrão de 0,4 m.
+  \item O tamanho amostral é 65 e queremos margens de erro
+    associadas a 95\% de confiança. Na amostra encontramos uma média de
+    2 m e um desvio padrão de 1 m.
+  \item O tamanho amostral é 28 e queremos margens de erro
+    associadas a 99\% de confiança. Na amostra encontramos uma média de
+    0,6 m e um desvio padrão de 0,2 m.
+  \end{compactenum}
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[10.]
+\item Quais são os intervalos de confiança para a verdadeira média
+  populacional para os itens (a), (b) e (c) da questão anterior?
+  Escreva uma conclusão à respeito de cada intervalo de confiança
+  obtido.
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+%% \begin{compactenum}[9.]
+%% \item Se você tivesse que resolver novamente as questões \thesection.1,
+%%   \thesection.2 e \thesection.3, o que mudaria se as alturas das ondas
+%%   não tivessem uma distribuição normal? Quais dos itens continuariam
+%%   tendo as mesmas respostas e quais seriam as novas respostas dos itens
+%%   que teriam que ser reavaliados?
+%% \end{compactenum}
+
+\begin{compactenum}[11.] % suzi, pg 68
+\item Uma pesquisa de consumo de combustível realizada entre 61
+  clientes de um posto indicou um consumo médio de 11,2 km/l, com
+  desvio-padrão de 2,8 km/l. Suponha distribuição normal para o
+    consumo médio. Com isso:
+  \begin{compactenum}
+  \item Determine um intervalo de confiança de 95\% para o consumo médio
+    populacional dos clientes.
+  \item Assuma que foram avaliados apenas 9 clientes. Calcule intervalos
+    de confiança para a média ($\bar{x} = 11,2$) para os seguintes casos
+    \begin{compactenum}
+    \item Assumindo $\sigma$ desconhecido ($s=2,8$)
+    \item Assumindo $\sigma$ conhecido ($\sigma=2,8$)
+    \end{compactenum}
+    Qual a sua conclusão referente à diferença observada entre os dois
+    intervalos de confiança? Por que ocorre essa diferença?
+  \end{compactenum}
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[12.] % triola, pg 387
+\item Você deseja estimar a quantia média de taxas anuais pagas por
+  estudantes de universidades privadas. É razoável supor que estas
+  quantidades variam entre R\$ 0,00 (por exemplo, para estudantes com
+  bolsa integral) até R\$ 40.000,00. Determine o número de estudantes
+  que devem ser selecionados para termos 95\% de confiança de que a
+  média amostral esteja no máximo a:
+  \begin{compactenum}
+  \item R\$ 100,00 da verdadeira média populacional
+  \item R\$ 500,00 da verdadeira média populacional
+  \end{compactenum}
+  O que você pode dizer à respeito das diferenças entre os tamanhos
+  amostrais obtidos?
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+%=======================================================================
+% Teste de hipótese
+%=======================================================================
+
+\begin{compactenum}[13.]
+\item O que é a probabilidade de cometer um erro do tipo I, e o que
+  significa esse termo?
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[14.]
+\item Uma máquina é projetada para fazer esferas de aço de 1 cm de
+  raio. Uma amostra de 10 esferas é produzida, e tem raio médio de 1,004
+  cm, com $s = 0,003$. Há razões para suspeitar que a máquina esteja
+  produzindo esferas com raio maior que 1 cm? (Use um nível de
+  significância de 10\%).
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[15.] % kazmier pg 166
+\item O desvio-padrão da vida útil de um monitor de LED é $\sigma =
+  500$, e a distribuição da vida útil é considerada normal. O fabricante
+  afirma que a vida útil média é, no mínimo 9000 horas. Testar esta
+  afirmação ao nível de significância de 5\%, dado que em uma amostra de
+  15 televisores de LED, a média foi de 8800 horas.
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\clearpage
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[16.] % morettin, pg 247
+\item Uma fábrica de automóveis anuncia que seus carros consomem, em
+  média, 11 litros por 100 km, com desvio-padrão de 0,8 litro. Uma
+  revista decide testar essa afirmação e analisa 35 carros dessa marca,
+  obtendo 11,4 litros por 100 km como consumo médio. Admintindo que o
+  consumo tenha distribuição normal, ao nível de 10\%, o que a revista
+  concluirá sobre o anúncio da fábrica?
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[17.] % kazmier, pg 170
+\item Um investidor interessado em desenvolver um centro comercial, é
+  informado por um representante de um grupo comunitário que a renda
+  média familiar na comuidade é de no mínimo R\$ 15.000,00 por
+  ano. Supõe-se que os valores de renda na população sejam normalmente
+  distribuídos. Para uma amostra aleatória de $n=15$ famílias, a média
+  amostral é de R\$ 14.000,00, e o desvio-padrão amostral é de R\$
+  2.000,00. Testar a hipótese do salário médio na comunidade ser no
+  mínimo R\$ 15.000,00, ao nível de 5\% de significância.
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[18.] % freund, pg 225
+\item Cinco medidas do conteúdo de alcatrão em um cigarro acusaram
+  $\bar{x} = 14,4$ mg e $s = 0,274$ mg. Pretende-se testar a hipótese de
+  que a média de alcatrão nos cigarros é igual a 14,1 mg, conforme
+  declarado na embalagem, ao nível de 5\% de significância. Qual seria a
+  conclusão do teste quando as hipóteses alternativas forem:
+  \begin{compactenum}
+  \item[] (a) $H_a \neq 14,1$ \qquad (b) $H_b < 14,1$ \qquad (c) $H_a > 14,1$
+  \end{compactenum}
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{compactenum}[19.] % magalhaes, pg 252
+\item Um pesquisador deseja estudar o efeito de certa substância no
+  tempo de reação de seres vivos a um certo tipo de estímulo. Um
+  experimento é desenvolvido com cobaias que são inoculadas com a
+  substância e submetidas a um estímulo elétrico. Os tempos de reação,
+  em segundos, foram: 9,1; 9,3; 7,2; 7,5; 13,3; 10,9; 7,2; 9,9; 8,0;
+  8,6. Admite-se que o tempo de reação sugue, em geral, o modelo normal
+  com média 8 e desvio-padrão $\sigma = 2$. O pesquisador desconfia,
+  entretanto, que o tempo médio sofre alteração por influência da
+  substância. Faça um teste de hipótese para, ao nível de 6\% de
+  significância, para verificar a desconfiança do pesquisador.
+\end{compactenum}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+
+\end{document}
