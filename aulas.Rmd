@@ -88,6 +88,7 @@ cat(paste0("- **", datas, "**:\n"))
 - [Lista 1][]: Amostragem e análise exploratória de dados. [Gabarito 1][].
 - [Lista 2][]: Medidas resumo. [Gabarito 2][].
 - [Lista 3][]: Probabilidade. [Gabarito 3][].
+- [Lista 4][]: Inferência. [Gabarito 4][].
 
 - [Segunda prova][]: Probabilidade e variáveis aleatórias. **Entrega:
   28/11 (segunda-feira)**.
@@ -104,3 +105,5 @@ As notas estão disponíveis [nesta página](notas.html).
 [Lista 3]: exercicios/04_Probabilidade.pdf
 [Gabarito 3]: exercicios/04_Probabilidade_GABARITO.pdf
 [Segunda prova]: exercicios/P2_ce001.pdf
+[Lista 4]: exercicios/05_Inferencia.pdf
+[Gabarito 4]: exercicios/05_Inferencia_GABARITO.pdf
