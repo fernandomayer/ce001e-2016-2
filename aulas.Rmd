@@ -80,7 +80,8 @@ cat(paste0("- **", datas, "**:\n"))
   [Slides](07_Estimacao_intervalar/07_Estimacao_intervalar.pdf).
 - **30/11**: Testes de
   hipótese. [Slides](08_Teste_de_hipotese/08_Teste_de_hipotese.pdf).
-- **05/12**: (Extra): Testes de hipótese.
+- **05/12**: (Extra): Testes de
+  hipótese. [Slides](08_Teste_de_hipotese/08_Teste_de_hipotese.pdf).
 - **07/12**: **Terceira prova**
 
 ## Exercícios

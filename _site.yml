@@ -56,6 +56,8 @@ navbar:
         href: exercicios/03_Medidas_resumo.pdf
       - text: "Probabilidade [PDF]"
         href: exercicios/04_Probabilidade.pdf
+      - text: "Inferência [PDF]"
+        href: exercicios/05_Inferencia.pdf
   right:
     - text: GitHub
       icon: fa-github fa-lg
