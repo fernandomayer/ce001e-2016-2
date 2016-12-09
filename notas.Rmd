@@ -71,6 +71,18 @@ round(apply(notas[, notas.col, drop = FALSE], 2, statm), 2)
 <!-- **Aqui estão apenas as notas individuais de cada sabatina. Veja na seção -->
 <!-- abaixo as médias finais calculadas!** -->
 
+```{r, include=FALSE}
+## Calcula a média
+notas$Média <- apply(notas[, 2:4], 1, mean)
+
+## Arredonda a media para duas casa decimais
+notas$Média <- round(notas$Média, 1)
+
+## Situação
+notas$Situação <- NA
+notas$Situação <- ifelse(notas$Média < 7, "Exame", "Aprovado")
+```
+
 ```{r, results='asis'}
-kable(notas[, c(1, notas.col)], align = "c")
+kable(notas, align = "c")
 ```

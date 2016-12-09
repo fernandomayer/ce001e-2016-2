@@ -313,7 +313,7 @@ hist(notas.all, breaks = breaks, right = FALSE, include.lowest = TRUE,
 }
 round(statm(notas.all), 2)</code></pre>
 <pre><code>  Min    Q1    Q2    Q3   Max Média     s   NAs 
- 2.10  5.65  7.20  8.95  9.10  6.76  2.44 14.00 </code></pre>
+ 2.10  6.70  8.00  8.60  9.10  7.18  2.14 22.00 </code></pre>
 </div>
 <div id="resumos-por-prova" class="section level2">
 <h2>Resumos por prova</h2>
@@ -323,27 +323,30 @@ boxplot(notas[, notas.col], ylim = c(0, 10), ylab = &quot;Notas&quot;)</code></p
 <p><img src="figures/unnamed-chunk-4-1.png" width="640" style="display: block; margin: auto;" /></p>
 <p>Resumo dos cinco números, média, desvio-padrão, e número de provas não realizadas (NA):</p>
 <pre class="r"><code>round(apply(notas[, notas.col, drop = FALSE], 2, statm), 2)</code></pre>
-<pre><code>        P1   P2
-Min   2.10 5.10
-Q1    5.25 6.20
-Q2    8.90 6.70
-Q3    9.05 7.20
-Max   9.10 7.20
-Média 6.96 6.48
-s     3.21 0.88
-NAs   6.00 8.00</code></pre>
+<pre><code>        P1   P2   P3
+Min   2.10 5.10 7.50
+Q1    5.25 6.20 8.00
+Q2    8.90 6.70 8.30
+Q3    9.05 7.20 8.50
+Max   9.10 7.20 8.60
+Média 6.96 6.48 8.18
+s     3.21 0.88 0.44
+NAs   6.00 8.00 8.00</code></pre>
 </div>
 <div id="notas-individuais" class="section level2">
 <h2>Notas individuais</h2>
 <!-- **Aqui estão apenas as notas individuais de cada sabatina. Veja na seção -->
 <!-- abaixo as médias finais calculadas!** -->
-<pre class="r"><code>kable(notas[, c(1, notas.col)], align = &quot;c&quot;)</code></pre>
+<pre class="r"><code>kable(notas, align = &quot;c&quot;)</code></pre>
 <table>
 <thead>
 <tr class="header">
 <th align="center">Matricula</th>
 <th align="center">P1</th>
 <th align="center">P2</th>
+<th align="center">P3</th>
+<th align="center">Média</th>
+<th align="center">Situação</th>
 </tr>
 </thead>
 <tbody>
@@ -351,34 +354,55 @@ NAs   6.00 8.00</code></pre>
 <td align="center">20123200</td>
 <td align="center">2.1</td>
 <td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 </tr>
 <tr class="even">
 <td align="center">20131111</td>
 <td align="center">9.0</td>
 <td align="center">7.2</td>
+<td align="center">8.0</td>
+<td align="center">8.1</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="center">20131487</td>
 <td align="center">8.9</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 <td align="center">NA</td>
 </tr>
 <tr class="even">
 <td align="center">20132481</td>
 <td align="center">9.1</td>
 <td align="center">7.2</td>
+<td align="center">8.5</td>
+<td align="center">8.3</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="center">20136648</td>
 <td align="center">8.0</td>
 <td align="center">5.1</td>
+<td align="center">8.3</td>
+<td align="center">7.1</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="center">20147987</td>
 <td align="center">9.1</td>
 <td align="center">6.2</td>
+<td align="center">8.6</td>
+<td align="center">8.0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="center">20148728</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 </tr>
@@ -386,14 +410,23 @@ NAs   6.00 8.00</code></pre>
 <td align="center">20150476</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 </tr>
 <tr class="odd">
 <td align="center">20154698</td>
 <td align="center">2.5</td>
 <td align="center">6.7</td>
+<td align="center">7.5</td>
+<td align="center">5.6</td>
+<td align="center">Exame</td>
 </tr>
 <tr class="even">
 <td align="center">20157864</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 </tr>
@@ -401,14 +434,23 @@ NAs   6.00 8.00</code></pre>
 <td align="center">20158854</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 </tr>
 <tr class="even">
 <td align="center">20161294</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 </tr>
 <tr class="odd">
 <td align="center">20161460</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 </tr>
