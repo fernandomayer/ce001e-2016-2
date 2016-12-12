@@ -301,7 +301,7 @@ hist(notas.all, breaks = breaks, right = FALSE, include.lowest = TRUE,
      main = &quot;Notas gerais&quot;, xlab = &quot;Notas&quot;, ylab = &quot;Frequência absoluta&quot;)</code></pre>
 <p><img src="figures/unnamed-chunk-2-1.png" width="640" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>## boxplot(notas.all, horizontal = TRUE, ylim = c(0, 10),
-##         col = &quot;lightgray&quot;, add = TRUE, at = 1)</code></pre>
+##         col = &quot;lightgray&quot;, add = TRUE, at = 0)</code></pre>
 <p>Resumo dos cinco números, média, desvio-padrão, e número de provas não realizadas (NA):</p>
 <pre class="r"><code>statm &lt;- function(x){
     res &lt;- c(fivenum(x),
