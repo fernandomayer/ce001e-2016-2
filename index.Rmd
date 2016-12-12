@@ -14,7 +14,7 @@ source("setup_knitr.R")
 <div class="alert alert-danger" role="alert">
 **ATENÇÃO!**
 
-- O exame será dia 14/12 às 14:00 no LEG (Laboratório de Estatística e
+- O exame será dia 21/12 às 14:00 no LEG (Laboratório de Estatística e
   Geoinformação - última sala à direita do corredor do segundo andar do
   prédio novo de Exatas)
 
