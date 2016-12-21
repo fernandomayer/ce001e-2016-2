@@ -127,3 +127,24 @@ notas <- notas[, cols]
 ## Mostra tabela
 kable(notas, align = "c", digits = 2)
 ```
+
+
+```{r, echo=FALSE, include=FALSE, eval=FALSE}
+##----------------------------------------------------------------------
+## Monta a tabela final com as informacoes necessarias para digitar as
+## notas no sistema
+
+## Importa nomes
+arq <- "~/Dropbox/UFPR/disciplinas/s2016-2/CE001/nomes_ce001_2016-2.csv"
+nomes <- read.csv(arq)
+nomes$Matricula <- as.numeric(gsub("GRR", "", nomes$Matricula))
+
+## Faz o merge dos nomes com as notas
+notas.sis <- merge(nomes, notas[, c("Matricula", "MFA")],
+                   by = "Matricula", sort = FALSE)
+
+## Exporta tabela final
+write.table(notas.sis,
+            "~/Dropbox/UFPR/disciplinas/s2016-2/CE001/final_ce001_2016-2.csv",
+            sep = ",", dec = ".", col.names = TRUE, row.names = FALSE)
+```
