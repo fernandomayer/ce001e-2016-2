@@ -337,7 +337,38 @@ NAs   6.00 8.00 8.00</code></pre>
 <h2>Notas individuais</h2>
 <!-- **Aqui estão apenas as notas individuais de cada sabatina. Veja na seção -->
 <!-- abaixo as médias finais calculadas!** -->
-<pre class="r"><code>kable(notas, align = &quot;c&quot;)</code></pre>
+<pre class="r"><code>##----------------------------------------------------------------------
+## Antes do exame (Ex)
+
+## Cria a coluna Situacao
+notas$S &lt;- &quot;Ap&quot;
+notas$S[notas$M &gt;= 4 &amp; notas$M &lt; 7] &lt;- &quot;Ex&quot;
+notas$S[notas$M &lt; 4] &lt;- &quot;Re&quot;</code></pre>
+<p><strong>Após o exame</strong>: as notas dos exames estão na coluna <code>E</code>. A média final (<code>MF</code>) é a mesma para quem não fez exame, e é a média entre a média final (<code>M</code>) e a nota do exame (<code>E</code>) para quem fez exame. A média final arredondada (<code>MFA</code>) é a nota que será lançada no sistema. A coluna <code>SF</code> mostra a situação final dos alunos após o exame.</p>
+<pre class="r"><code>##----------------------------------------------------------------------
+## Após exame (Ex)
+
+## Calcula média final (MF), que é média da nota final com a nota do
+## exame (apenas para os que ficaram de exame)
+notas$MF &lt;- notas$M
+notas$MF[notas$S == &quot;Ex&quot;] &lt;- (notas$M[notas$S == &quot;Ex&quot;] +
+    notas$E[notas$S == &quot;Ex&quot;])/2
+notas$MF &lt;- round(notas$MF, 2)
+
+## Calcula a média final arredonadada (MFA), que é a média multiplicada por
+## 10 e arredondada para cima (é como será lançada no sistema)
+notas$MFA &lt;- ceiling(notas$MF*10)
+
+## Cria a coluna Situacao final (SF), que indica a situação após exame
+notas$SF &lt;- &quot;Ap&quot;
+notas$SF[notas$MFA &lt; 50] &lt;- &quot;Re&quot;
+
+## Arruma a ordem das colunas
+cols &lt;- c(1:4, 6:7, 5, 8:10)
+notas &lt;- notas[, cols]
+
+## Mostra tabela
+kable(notas, align = &quot;c&quot;, digits = 2)</code></pre>
 <table>
 <thead>
 <tr class="header">
@@ -345,8 +376,12 @@ NAs   6.00 8.00 8.00</code></pre>
 <th align="center">P1</th>
 <th align="center">P2</th>
 <th align="center">P3</th>
-<th align="center">Média</th>
-<th align="center">Situação</th>
+<th align="center">M</th>
+<th align="center">S</th>
+<th align="center">E</th>
+<th align="center">MF</th>
+<th align="center">MFA</th>
+<th align="center">SF</th>
 </tr>
 </thead>
 <tbody>
@@ -355,104 +390,156 @@ NAs   6.00 8.00 8.00</code></pre>
 <td align="center">2.1</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">0.70</td>
+<td align="center">Re</td>
 <td align="center">NA</td>
-<td align="center">NA</td>
+<td align="center">0.70</td>
+<td align="center">7</td>
+<td align="center">Re</td>
 </tr>
 <tr class="even">
 <td align="center">20131111</td>
 <td align="center">9.0</td>
 <td align="center">7.2</td>
 <td align="center">8.0</td>
-<td align="center">8.1</td>
-<td align="center">Aprovado</td>
+<td align="center">8.07</td>
+<td align="center">Ap</td>
+<td align="center">NA</td>
+<td align="center">8.07</td>
+<td align="center">81</td>
+<td align="center">Ap</td>
 </tr>
 <tr class="odd">
 <td align="center">20131487</td>
 <td align="center">8.9</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">2.97</td>
+<td align="center">Re</td>
 <td align="center">NA</td>
-<td align="center">NA</td>
+<td align="center">2.97</td>
+<td align="center">30</td>
+<td align="center">Re</td>
 </tr>
 <tr class="even">
 <td align="center">20132481</td>
 <td align="center">9.1</td>
 <td align="center">7.2</td>
 <td align="center">8.5</td>
-<td align="center">8.3</td>
-<td align="center">Aprovado</td>
+<td align="center">8.27</td>
+<td align="center">Ap</td>
+<td align="center">NA</td>
+<td align="center">8.27</td>
+<td align="center">83</td>
+<td align="center">Ap</td>
 </tr>
 <tr class="odd">
 <td align="center">20136648</td>
 <td align="center">8.0</td>
 <td align="center">5.1</td>
 <td align="center">8.3</td>
-<td align="center">7.1</td>
-<td align="center">Aprovado</td>
+<td align="center">7.13</td>
+<td align="center">Ap</td>
+<td align="center">NA</td>
+<td align="center">7.13</td>
+<td align="center">72</td>
+<td align="center">Ap</td>
 </tr>
 <tr class="even">
 <td align="center">20147987</td>
 <td align="center">9.1</td>
 <td align="center">6.2</td>
 <td align="center">8.6</td>
-<td align="center">8.0</td>
-<td align="center">Aprovado</td>
+<td align="center">7.97</td>
+<td align="center">Ap</td>
+<td align="center">NA</td>
+<td align="center">7.97</td>
+<td align="center">80</td>
+<td align="center">Ap</td>
 </tr>
 <tr class="odd">
 <td align="center">20148728</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">0.00</td>
+<td align="center">Re</td>
 <td align="center">NA</td>
-<td align="center">NA</td>
+<td align="center">0.00</td>
+<td align="center">0</td>
+<td align="center">Re</td>
 </tr>
 <tr class="even">
 <td align="center">20150476</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">0.00</td>
+<td align="center">Re</td>
 <td align="center">NA</td>
-<td align="center">NA</td>
+<td align="center">0.00</td>
+<td align="center">0</td>
+<td align="center">Re</td>
 </tr>
 <tr class="odd">
 <td align="center">20154698</td>
 <td align="center">2.5</td>
 <td align="center">6.7</td>
 <td align="center">7.5</td>
-<td align="center">5.6</td>
-<td align="center">Exame</td>
+<td align="center">5.57</td>
+<td align="center">Ex</td>
+<td align="center">6</td>
+<td align="center">5.79</td>
+<td align="center">58</td>
+<td align="center">Ap</td>
 </tr>
 <tr class="even">
 <td align="center">20157864</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">0.00</td>
+<td align="center">Re</td>
 <td align="center">NA</td>
-<td align="center">NA</td>
+<td align="center">0.00</td>
+<td align="center">0</td>
+<td align="center">Re</td>
 </tr>
 <tr class="odd">
 <td align="center">20158854</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">0.00</td>
+<td align="center">Re</td>
 <td align="center">NA</td>
-<td align="center">NA</td>
+<td align="center">0.00</td>
+<td align="center">0</td>
+<td align="center">Re</td>
 </tr>
 <tr class="even">
 <td align="center">20161294</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">0.00</td>
+<td align="center">Re</td>
 <td align="center">NA</td>
-<td align="center">NA</td>
+<td align="center">0.00</td>
+<td align="center">0</td>
+<td align="center">Re</td>
 </tr>
 <tr class="odd">
 <td align="center">20161460</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">0.00</td>
+<td align="center">Re</td>
 <td align="center">NA</td>
-<td align="center">NA</td>
+<td align="center">0.00</td>
+<td align="center">0</td>
+<td align="center">Re</td>
 </tr>
 </tbody>
 </table>
